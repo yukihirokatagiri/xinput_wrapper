@@ -1,0 +1,8 @@
+
+/.vs/XInputSample/v16
+/bin/x64/Debug
+/obj
+/Properties
+/XInputWrapper/x64/Debug
+/XInputWrapper/XInputWrapper.vcxproj.user
+/XInputWrapper/XInputWrapper.vcxproj.filters
