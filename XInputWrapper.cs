@@ -48,31 +48,6 @@ namespace Gamepad
 		public short sThumbRY;
 
 		#region Private methods
-		private double GetRadian(double x, double y)
-		{
-			double radian = 0;
-
-			if (x == 0)
-			{
-				if (y > 0) radian = 0;
-				else if (y < 0) radian = Math.PI;
-			}
-			else if (y == 0)
-			{
-				if (x > 0) radian = Math.PI / 2;
-				else if (x < 0) radian = Math.PI * 3 / 2;
-			}
-			else if (x > 0)
-			{
-				radian = -Math.Atan(y / x) + Math.PI / 2;
-			}
-			else if (x < 0)
-			{
-				radian = -Math.Atan(y / x) + Math.PI * 3 / 2;
-			}
-
-			return radian;
-		}
 
 		private ThumbVector NormalizeThumb(double x, double y, double deadzone)
 		{
